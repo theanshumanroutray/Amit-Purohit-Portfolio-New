@@ -37,30 +37,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-.header.sticky {
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
-}
-.logo {
-  font-size: 3.5rem;
-  color: var(--text-color);
-  font-weight: 600;
-  cursor: default;
-}
-.navbar a {
-  font-size: 1.9rem;
-  color: var(--text-color);
-  margin-left: 4rem;
-  transition: 0.3s;
-}
-.navbar a:hover,
-.navbar a.active {
-  color: var(--main-color);
-}
-#menu-icon {
-  font-size: 3.6rem;
-  color: var(--text-color);
-  display: none;
-}
+
 
 /* Section CSS */
 section {
@@ -68,32 +45,63 @@ section {
 }
 
 /* Section Home */
-.home {
-  display: grid;
-  justify-content: center;
+.header {
+  background-image:  url('./images/header-bg.jpg') center/cover no-repeat;
+  height: 100vh;
+  color: #fff;
+  display: flex;
   align-items: center;
-  width: 100%;
 }
+
 .homeContent {
-  width: 100%;
-  align-items: right;
-  justify-content: right;
-  padding: 45rem 1.7rem 15rem 143rem;
-  display: inline-block;
+  max-width: 1200px;
+  padding: 285px 0 0 900px ;
 }
+
 .homeContent h3 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  text-align: left;
-  margin-left: .9rem;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
-.homeContent h3:nth-of-type(2) {
-  margin: 2rem;
+
+.homeContent h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
 }
-span {
+
+.homeContent h3 span {
   color: var(--main-color);
-  margin-left: 0.9rem;
 }
+
+.homeContent p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.social-media{
+  /* padding: 25px 47px 0 9px; */
+}
+.social-media a {
+  color: #fff;
+  font-size: 2.3rem;
+  width: 4rem;
+  height: 4rem;
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  background: transparent;
+  border: 0.3rem solid var(--second-bg-color);
+  border-radius: 70%;
+  margin-right: 10px;
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* Button css */
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
@@ -109,51 +117,6 @@ span {
 .btn:hover {
   box-shadow: none;
 }
-.homeContent h1 {
-  font-size: 5.6rem;
-  font-weight: 700;
-  line-height: 1.3;
-  margin: 0 0 0 3rem;
-}
-.home-img img {
-  width: 100vw;
-  height: 100vh;
-}
-
-.homeContent p {
-  font-size: 1.6rem;
-  color: var(--text-color);
-  margin-left: 1.9rem;
-}
-.social-media {
-  margin: 0 110rem 10rem 0.2rem;
-  justify-content: left;
-  align-items: left;
-  display: inline-block;
-  display: inline-block;
-  padding: 0 55rem 0 7rem;
-}
-.social-media a {
-  display: inline-flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-  width: 4rem;
-  height: 4rem;
-  background: transparent;
-  border: 0.3rem solid var(--second-bg-color);
-  border-radius: 70%;
-  font-size: 2.3rem;
-  color: var(--main-color);
-  margin: 3rem 1.5rem 3rem 0;
-  transition: 0.5s ease;
-}
-.social-media a:hover {
-  background: var(--main-color);
-  color: var(--second-bg-color);
-  box-shadow: 0 0 1rem var(--main-color);
-}
-
 /* About Section CSS */
 .about {
   display: flex;
@@ -455,23 +418,7 @@ span {
     height: 60vh;
   }
 
-  .logo {
-    font-size: 2.5rem;
-  }
 
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar a {
-    font-size: 1.6rem;
-    margin: 1rem 0;
-  }
-
-  #menu-icon {
-    display: block;
-  }
   .home {
     display: grid;
   }
@@ -500,7 +447,7 @@ span {
   .social-media {
     margin: 0 0;
     justify-content: center;
-    padding: 2rem 0 47rem 12.5rem;
+    padding: 2rem 0 47rem 10.5rem;
     display: inline-block;
   }
 
